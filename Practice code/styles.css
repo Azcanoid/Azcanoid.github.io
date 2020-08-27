@@ -1,0 +1,20 @@
+.darktheme{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(42,42,42,1) 100%);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.pog{
+    padding: 5px;
+}
+
+.pog:hover{
+    width:105%;
+    padding: 0px
+}
