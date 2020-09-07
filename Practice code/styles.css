@@ -16,6 +16,7 @@
 .pog {
   padding: 5px;
   align-content: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .pog:hover {
