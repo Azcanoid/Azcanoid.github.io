@@ -19,7 +19,6 @@
 }
 
 .pog:hover {
-  transform: scale(1.05);
 }
 
 .lul1,
@@ -41,4 +40,16 @@
 }
 .monkey3:hover .lul3 {
   display: block;
+}
+
+.fwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minxmax(auto, auto);
+  justify-items: center;
+}
+
+.fwrapper > div {
+  border: #333 1px solid;
 }
