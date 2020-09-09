@@ -1,0 +1,60 @@
+.container {
+  padding-top: 3rem;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas: "mplogo mplogo soundboard soundboard soundboard memes memes memes gamenight gamenight gamenight gamenight";
+  grid-gap: 1rem;
+}
+.darktheme {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(42, 42, 42, 1) 100%
+  );
+}
+
+#mplogo {
+  grid-area: mplogo;
+}
+
+#soundboard {
+  grid-area: soundboard;
+}
+#memes {
+  grid-area: memes;
+}
+#gamenight {
+  grid-area: gamenight;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "mplogo" "soundboard" "memes" "gamenight";
+  }
+}
+
+.illu {
+}
+
+.fitter {
+  transition: all 0.2s ease-in-out;
+  flex-direction: column;
+}
+.fitter > .illu {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  max-height: 11rem;
+  border-radius: 20px;
+}
+
+.fitter:hover {
+  transform: scale(1.05);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}

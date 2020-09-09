@@ -21,6 +21,7 @@
 
 .pog:hover {
   transform: scale(1.05);
+  transition: box-shadow 0.3s;
 }
 
 .lul1,
