@@ -4,7 +4,11 @@
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-template-areas: "mplogo mplogo soundboard soundboard soundboard memes memes memes gamenight gamenight gamenight gamenight";
+  grid-template-areas:
+    "mplogo mplogo soundboard soundboard soundboard memes memes memes gamenight gamenight gamenight gamenight"
+    "playlist playlist playlist playlist playlist playlist playlist playlist playlist playlist playlist playlist"
+    "community community community community community  cafe cafe cafe cafe cafe cafe cafe";
+
   grid-gap: 1rem;
 }
 .darktheme {
@@ -29,13 +33,15 @@
 #gamenight {
   grid-area: gamenight;
 }
+#playlist {
+  grid-area: playlist;
+}
+#community {
+  grid-area: community;
+}
 
-@media only screen and (max-width: 800px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "mplogo" "soundboard" "memes" "gamenight";
-  }
+#cafe {
+  grid-area: cafe;
 }
 
 .illu {
@@ -44,6 +50,7 @@
 .fitter {
   transition: all 0.2s ease-in-out;
   flex-direction: column;
+  position: relative;
 }
 .fitter > .illu {
   object-fit: cover;
@@ -57,4 +64,11 @@
   transform: scale(1.05);
   transition: box-shadow 0.3s;
   cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "mplogo" "soundboard" "memes" "gamenight" "playlist" "community" "cafe";
+  }
 }
