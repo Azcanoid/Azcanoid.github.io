@@ -1,0 +1,86 @@
+.flex-p {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: left;
+  flex-wrap: wrap;
+}
+.container {
+  background: #2d2d2d;
+  height: 330px;
+  width: 330px;
+  margin: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.container > h2 {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.container > ul {
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #a5a5a5;
+}
+.container > hr {
+  width: 80%;
+  text-align: left;
+  margin-left: 1.2rem;
+}
+
+.pri-a > h2,
+hr {
+  color: #f88888;
+}
+.pri-a > hr {
+  border: 1px solid #f88888;
+}
+.pri-b > h2,
+hr {
+  color: #88f888;
+}
+.pri-b > hr {
+  border: 1px solid #88f888;
+}
+.pri-c > h2,
+hr {
+  color: #8888f8;
+}
+.pri-c > hr {
+  border: 1px solid #8888f8;
+}
+
+.pri-d > h2,
+hr {
+  color: #f2d957;
+}
+.pri-d > hr {
+  border: 1px solid #f2d957;
+}
+.pri-a:hover,
+.pri-b:hover,
+.pri-c:hover,
+.pri-d:hover {
+}
+.pri-a:hover {
+  border: solid #f88888;
+}
+.pri-b:hover {
+  border: solid #88f888;
+}
+.pri-c:hover {
+  border: solid #8888f8;
+}
+.pri-d:hover {
+  border: solid #f2d957;
+}
