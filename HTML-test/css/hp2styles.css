@@ -1,3 +1,6 @@
+body {
+  background-color: #000000;
+}
 .flex-p {
   display: flex;
   justify-content: space-evenly;
@@ -6,8 +9,8 @@
 }
 .container {
   background: #2d2d2d;
-  height: 330px;
-  width: 330px;
+  height: 300px;
+  width: 300px;
   margin: 10px;
   border-radius: 20px;
   box-sizing: border-box;
@@ -20,16 +23,15 @@
   font-family: Verdana;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 42px;
 }
 .container > ul {
   font-family: Verdana;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
-
   color: #a5a5a5;
 }
 .container > hr {
@@ -83,4 +85,8 @@ hr {
 }
 .pri-d:hover {
   border: solid #f2d957;
+}
+
+.pri-a:hover + body {
+  background-color: blue;
 }
